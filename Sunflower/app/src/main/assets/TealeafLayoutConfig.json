@@ -1,0 +1,38 @@
+{
+  "AutoLayout": {
+    "IBMGlobalScreenSettings": {
+      "ScreenChange": true,
+      "DisplayName": "",
+      "CaptureLayoutDelay": 800,
+      "ScreenShot": true,
+      "NumberOfWebViews": 0,
+      "CaptureUserEvents": true,
+      "CaptureScreenVisits": false,
+      "CaptureLayoutOn": 2,
+      "CaptureScreenshotOn": 0
+    },
+    "GardenActivity": {
+      "DisplayName": "GardenActivity"
+    },
+    "PlantListFragment": {
+      "DisplayName": "PlantListFragment"
+    },
+    "GardenFragment": {
+      "DisplayName": "GardenFragment"
+    },
+    "HomeViewPagerFragment": {
+      "DisplayName": "HomeViewPagerFragment"
+    },
+    "PlantDetailFragment": {
+      "DisplayName": "PlantDetailFragment"
+    }
+  },
+  "AppendMapIds": {
+    "com.any.package:id/givenIdOnXmlLayout1": {
+      "mid": "giveAdditionalId1"
+    },
+    "com.any.package:id/givenIdOnXmlLayout2": {
+      "mid": "giveAdditionalId2"
+    }
+  }
+}
