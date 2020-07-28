@@ -20,19 +20,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import com.google.samples.apps.sunflower.databinding.ActivityGardenBinding
-import com.tl.uic.*
-import android.view.MotionEvent
 
 class GardenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView<ActivityGardenBinding>(this, R.layout.activity_garden)
-        var tealeaf = Tealeaf(getApplication())
-        Tealeaf.enable()
-    }
-
-    override fun dispatchTouchEvent(e: MotionEvent): Boolean {
-        return super.dispatchTouchEvent(e);
     }
 }
