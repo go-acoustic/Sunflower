@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sunflower.iml" filepath="$PROJECT_DIR$/Sunflower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sunflower-Sunflower.iml" filepath="$PROJECT_DIR$/.idea/modules/Sunflower-Sunflower.iml" group="Sunflower" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sunflower-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sunflower-app.iml" group="Sunflower/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
