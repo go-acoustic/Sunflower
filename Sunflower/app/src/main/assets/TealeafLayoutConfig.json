@@ -12,7 +12,7 @@
     "IBMGlobalScreenSettings": {
       "ScreenChange": true,
       "DisplayName": "",
-      "CaptureLayoutDelay": 500,
+      "CaptureLayoutDelay": 1500,
       "ScreenShot": false,
       "NumberOfWebViews": 0,
       "CaptureUserEvents": true,
@@ -38,34 +38,6 @@
           "^(5[1-5][0-9]{14}|2(22[1-9][0-9]{12}|2[3-9][0-9]{13}|[3-6][0-9]{14}|7[0-1][0-9]{13}|720[0-9]{12}))$"
         ]
       }
-    },
-    "MainActivity": {
-      "DisplayName": "HomePageActivity",
-      "CaptureLayoutDelay": 1000
-    },
-    "SearchActivity": {
-      "DisplayName": "SearchActivity",
-      "CaptureLayoutDelay": 100
-    },
-    "CartActivity": {
-      "DisplayName": "CartActivity",
-      "CaptureLayoutDelay": 200
-    },
-    "ListOfProductsActivity": {
-      "DisplayName": "ListOfProductsActivity",
-      "CaptureLayoutDelay": 500
-    },
-    "CheckoutActivity": {
-      "DisplayName": "CheckoutActivity",
-      "CaptureLayoutDelay": 100
-    },
-    "MoreActivity": {
-      "DisplayName": "MoreActivity",
-      "CaptureLayoutDelay": 100
-    },
-    "ProductDetailsFragment": {
-      "DisplayName": "ProductDetailsFragment",
-      "CaptureLayoutDelay": 1500
     }
   },
   "AppendMapIds": {
