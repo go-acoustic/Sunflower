@@ -19,7 +19,7 @@ buildscript {
     ext {
         // Sdk and tools
         compileSdkVersion = 30
-        minSdkVersion = 16
+        minSdkVersion = 21
         targetSdkVersion = 30
 
         // App dependencies
@@ -58,16 +58,17 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:${gradleVersion}"
+        classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath 'com.archinamon:android-gradle-aspectj:4.2.1'
     }
 }
 
-plugins {
-    id "com.diffplug.gradle.spotless" version "4.3.0"
-}
+//plugins {
+//    id "com.diffplug.gradle.spotless" version "5.1.0"
+//}
+
 
 allprojects {
     repositories {
@@ -79,9 +80,9 @@ allprojects {
     }
 }
 
-spotless {
-    kotlin {
-        target "**/*.kt"
-        ktlint(ktlintVersion).userData(['max_line_length' : '100'])
-    }
-}
+//spotless {
+//    kotlin {
+//        target "**/*.kt"
+//        ktlint(ktlintVersion).userData(['max_line_length' : '100'])
+//    }
+//}
