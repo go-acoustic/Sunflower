@@ -155,4 +155,18 @@ class PlantDetailFragment : Fragment() {
     interface Callback {
         fun add(plant: Plant?)
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onResume() {
+        super.onResume()
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onPause() {
+        super.onPause()
+    }
 }

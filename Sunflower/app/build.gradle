@@ -104,9 +104,9 @@ dependencies {
 
     // Public github maven repo
     //implementation 'com.ea:tealeafmd5:1.0.8'
-    implementation 'com.ea:eocore:2.0.46'
-    implementation 'com.ea:tealeaf:10.3.81'
-    implementation 'com.ea:teacuts:3.0.1'
+    implementation 'com.ea:eocore:2.0.51'
+    implementation 'com.ea:tealeaf:10.3.84'
+    implementation 'com.ea:teacuts:3.0.4'
 }
 
 
