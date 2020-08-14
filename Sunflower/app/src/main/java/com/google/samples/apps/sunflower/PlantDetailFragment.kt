@@ -28,6 +28,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -67,6 +68,8 @@ class PlantDetailFragment : Fragment() {
                     }
                 }
             }
+
+            galleryNav.setOnClickListener { navigateToGallery() }
 
             var isToolbarShown = false
 
@@ -111,6 +114,14 @@ class PlantDetailFragment : Fragment() {
         return binding.root
     }
 
+    private fun navigateToGallery() {
+        plantDetailViewModel.plant.value?.let { plant ->
+            val direction =
+                PlantDetailFragmentDirections.actionPlantDetailFragmentToGalleryFragment(plant.name)
+            findNavController().navigate(direction)
+        }
+    }
+
     // Helper function for calling a share functionality.
     // Should be used when user presses a share button/menu item.
     @Suppress("DEPRECATION")
@@ -122,7 +133,7 @@ class PlantDetailFragment : Fragment() {
                 getString(R.string.share_text_plant, plant.name)
             }
         }
-        val shareIntent = ShareCompat.IntentBuilder.from(activity)
+        val shareIntent = ShareCompat.IntentBuilder.from(requireActivity())
             .setText(shareText)
             .setType("text/plain")
             .createChooserIntent()
@@ -143,5 +154,19 @@ class PlantDetailFragment : Fragment() {
 
     interface Callback {
         fun add(plant: Plant?)
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onResume() {
+        super.onResume()
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onPause() {
+        super.onPause()
     }
 }

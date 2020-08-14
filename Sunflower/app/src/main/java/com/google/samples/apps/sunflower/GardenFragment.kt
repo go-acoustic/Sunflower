@@ -67,4 +67,18 @@ class GardenFragment : Fragment() {
         requireActivity().findViewById<ViewPager2>(R.id.view_pager).currentItem =
             PLANT_LIST_PAGE_INDEX
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onResume() {
+        super.onResume()
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onPause() {
+        super.onPause()
+    }
 }

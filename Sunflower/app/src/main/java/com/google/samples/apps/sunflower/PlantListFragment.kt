@@ -82,4 +82,18 @@ class PlantListFragment : Fragment() {
             }
         }
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onResume() {
+        super.onResume()
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onPause() {
+        super.onPause()
+    }
 }

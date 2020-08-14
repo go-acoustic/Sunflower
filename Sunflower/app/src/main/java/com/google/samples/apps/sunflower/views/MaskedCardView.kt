@@ -32,19 +32,19 @@ import android.graphics.RectF
  * working around it for now.
  */
 class MaskedCardView @JvmOverloads constructor(
-    context: Context,
-    attrs: AttributeSet? = null,
-    defStyle: Int = R.attr.materialCardViewStyle
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyle: Int = R.attr.materialCardViewStyle
 ) : MaterialCardView(context, attrs, defStyle) {
     @SuppressLint("RestrictedApi")
     private val pathProvider = ShapeAppearancePathProvider()
     private val path: Path = Path()
-    private val shapeAppearance: ShapeAppearanceModel = ShapeAppearanceModel(
-        context,
-        attrs,
-        defStyle,
-        R.style.Widget_MaterialComponents_CardView
-    )
+//    private val shapeAppearance: ShapeAppearanceModel = ShapeAppearanceModel(
+//            context,
+//            attrs,
+//            defStyle,
+//            R.style.Widget_MaterialComponents_CardView
+//    )
     private val rectF = RectF(0f, 0f, 0f, 0f)
 
     override fun onDraw(canvas: Canvas) {
@@ -56,7 +56,7 @@ class MaskedCardView @JvmOverloads constructor(
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         rectF.right = w.toFloat()
         rectF.bottom = h.toFloat()
-        pathProvider.calculatePath(shapeAppearance, 1f, rectF, path)
+        pathProvider.calculatePath(ShapeAppearanceModel.builder().build(), 1f, rectF, path)
         super.onSizeChanged(w, h, oldw, oldh)
     }
 }

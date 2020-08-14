@@ -67,4 +67,18 @@ class HomeViewPagerFragment : Fragment() {
             else -> null
         }
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onResume() {
+        super.onResume()
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun onPause() {
+        super.onPause()
+    }
 }
