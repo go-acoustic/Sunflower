@@ -75,7 +75,7 @@ allprojects {
         google()
         jcenter()
         maven {
-            url "https://raw.githubusercontent.com/ibm-watson-cxa/Android_Maven/beta"
+            url "https://raw.githubusercontent.com/acoustic-analytics/Android_Maven/beta"
         }
     }
 }
