@@ -13,7 +13,7 @@
       "ScreenChange": true,
       "DisplayName": "",
       "CaptureLayoutDelay": 2000,
-      "ScreenShot": true,
+      "ScreenShot": false,
       "NumberOfWebViews": 0,
       "CaptureUserEvents": true,
       "CaptureScreenVisits": true,
@@ -29,7 +29,9 @@
           "symbol": "#"
         },
         "MaskIdList": [
-          "textView1,login.password,editText*"
+          "plant_name",
+          "login.password",
+          "editText*"
         ],
         "MaskValueList": [
           "^4[0-9]{12}(?:[0-9]{3})?$",
@@ -41,7 +43,9 @@
     },
 
     "GardenActivity": {
-      "ScreenChange": true
+      "ScreenChange": true,
+      "DisplayName": "Home",
+      "CaptureLayoutDelay": 1000
     }
   },
   "AppendMapIds": {
