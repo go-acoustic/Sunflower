@@ -29,11 +29,12 @@ class GardenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView<ActivityGardenBinding>(this, R.layout.activity_garden)
 
-        var tealeaf = Tealeaf(getApplication())
+        var tealeaf = Tealeaf(application)
         Tealeaf.enable()
     }
 
     override fun dispatchTouchEvent(e: MotionEvent): Boolean {
+        Tealeaf.dispatchTouchEvent(this, e)
         return super.dispatchTouchEvent(e);
     }
 
