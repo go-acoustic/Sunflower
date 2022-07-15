@@ -19,7 +19,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
-apply plugin: 'com.archinamon.aspectj'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -49,14 +48,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        // work-runtime-ktx 2.1.0 and above now requires Java 8
-        jvmTarget = "1.8"
-
-        // Enable Coroutines and Flow APIs
-        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
-        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.FlowPreview"
-    }
+//    kotlinOptions {
+//        // work-runtime-ktx 2.1.0 and above now requires Java 8
+//        jvmTarget = "1.8"
+//
+//        // Enable Coroutines and Flow APIs
+//        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+//        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.FlowPreview"
+//    }
 }
 
 dependencies {
@@ -106,16 +105,7 @@ dependencies {
     //implementation 'com.ea:tealeafmd5:1.0.8'
     implementation 'com.ea:eocore:2.0.84'
     implementation 'com.ea:tealeaf:10.3.119'
-    implementation 'com.ea:teacuts:3.0.7'
 }
-
-
-aspectj {
-    includeAllJars true
-    includeJar 'teacuts'
-    includeAspectsFromJar 'teacuts'
-}
-
 
 def getUnsplashAccess() {
     return project.findProperty("unsplash_access_key")
