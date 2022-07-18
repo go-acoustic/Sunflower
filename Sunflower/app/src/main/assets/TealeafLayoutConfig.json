@@ -33,7 +33,7 @@
     "GardenActivity": {
       "ScreenChange": true,
       "DisplayName": "Home",
-      "CaptureLayoutDelay": 1000
+      "CaptureLayoutDelay": 500
     }
   },
   "AppendMapIds": {

@@ -1,6 +1,6 @@
 {
     "AddMessageTypeHeader": false,
-    "ClickEventEnabled": true,
+    "ClickEventEnabled": false,
     "ColorAccent": "#FF4081",
     "ColorPrimary": "#3F51B5",
     "ColorPrimaryDark": "#303F9F",
