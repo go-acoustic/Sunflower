@@ -18,12 +18,12 @@ buildscript {
     // Define versions in a single place
     ext {
         // Sdk and tools
-        compileSdkVersion = 30
+        compileSdkVersion = 31
         minSdkVersion = 21
         targetSdkVersion = 30
 
         // App dependencies
-        appCompatVersion = '1.1.0'
+        appCompatVersion = '1.3.0'
         constraintLayoutVersion = '2.0.0-beta3'
         coreTestingVersion = '2.0.0'
         coroutinesVersion = "1.3.0-M2"
@@ -33,17 +33,17 @@ buildscript {
         gradleVersion = '4.0.0'
         gsonVersion = '2.8.2'
         junitVersion = '4.12'
-        kotlinVersion = '1.3.72'
+        kotlinVersion = '1.6.21'
         ktlintVersion = '0.33.0'
-        ktxVersion = '1.0.2'
+        ktxVersion = '1.6.0'
         lifecycleVersion = '2.2.0'
-        materialVersion = '1.1.0-alpha09'
+        materialVersion = '1.5.0'
         navigationVersion = '2.2.0'
         okhttpLoggingVersion = '4.7.2'
         pagingVersion = '3.0.0-alpha02'
         recyclerViewVersion = '1.2.0-alpha04'
         retrofitVersion = '2.9.0'
-        roomVersion = '2.1.0'
+        roomVersion = '2.4.2'
         runnerVersion = '1.0.1'
         truthVersion = '0.42'
         testExtJunit = '1.1.0'
@@ -54,14 +54,13 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
-        classpath 'com.archinamon:android-gradle-aspectj:4.2.1'
     }
 }
 
@@ -73,9 +72,9 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
-            url "https://raw.githubusercontent.com/acoustic-analytics/Android_Maven/master"
+            url "https://raw.githubusercontent.com/acoustic-analytics/Android_Maven/beta"
         }
     }
 }
