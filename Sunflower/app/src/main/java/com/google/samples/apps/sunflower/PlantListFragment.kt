@@ -41,7 +41,7 @@ class PlantListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentPlantListBinding.inflate(inflater, container, false)
         context ?: return binding.root
 
@@ -53,10 +53,12 @@ class PlantListFragment : Fragment() {
         return binding.root
     }
 
+    @Deprecated("Deprecated in Java", ReplaceWith("MenuHost"))
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_plant_list, menu)
     }
 
+    @Deprecated("Deprecated in Java", ReplaceWith("MenuHost"))
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.filter_zone -> {
