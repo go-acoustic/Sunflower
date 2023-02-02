@@ -17,6 +17,7 @@
 package com.google.samples.apps.sunflower.data
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.google.samples.apps.sunflower.api.UnsplashService
 
 private const val UNSPLASH_STARTING_PAGE_INDEX = 1
@@ -38,6 +39,13 @@ class UnsplashPagingSource (
             )
         } catch (exception: Exception) {
             LoadResult.Error(exception)
+        }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, UnsplashPhoto>): Int? {
+        return state.anchorPosition?.let {
+            state.closestPageToPosition(it)?.prevKey?.plus(1)
+                ?: state.closestPageToPosition(it)?.nextKey?.minus(1)
         }
     }
 }
