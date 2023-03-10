@@ -105,8 +105,8 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Public MavenCentral repo
-    implementation "io.github.acoustic-analytics:eocore:2.0.304"
-    implementation "io.github.acoustic-analytics:tealeaf:10.3.318"
+    implementation "io.github.acoustic-analytics:eocore:+"
+    implementation "io.github.acoustic-analytics:tealeaf:+"
 }
 
 def getUnsplashAccess() {
