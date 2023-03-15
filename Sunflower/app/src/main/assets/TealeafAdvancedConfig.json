@@ -32,6 +32,7 @@
     "GenerateImageHash": true,
     "SwitchWidth": 140,
     "EnableActivityLifeCycleListener": true,
+    "EnableFragmentLifeCycleListener": true,
     "EditTextEnabled": true,
     "TouchEventEnabled": false,
     "ClickEventEnabled": true,
